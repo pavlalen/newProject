@@ -52,13 +52,13 @@ a:hover {
     border-radius: 35px 0px;
     height: 40px;
     width: 60px;
-    background-color: white;
-    border: rgb(93, 93, 189) 2px solid;
+    background-color: rgba(255, 255, 255, 0.897);
+    border: rgba(9, 238, 105, 0.486) 2px solid;
     margin: 20px;
 }
 
 .box:hover {
-    background-color: rgb(218, 241, 10);
+    background-color: rgba(10, 195, 241, 0.863);
     transform: rotate(1080deg);
     transition: 5s;
 }
@@ -116,4 +116,37 @@ header {
     margin-left: 50px;
     align-items: center;
     position: absolute;
+}
+
+#hearts {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    font-family: monospace;
+    margin: 0 42%;
+    font-size: 20px;
+    width: 10ch;
+    animation: flashing-border 700ms ease-in infinite, printed-text 4s steps(5);
+}
+
+@keyframes flashing-border {
+    0% {
+        border-color: white;
+    }
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: white;
+    }
+}
+
+@keyframes printed-text {
+    from {
+        width: 0;
+    }
+}
+
+.main h2 {
+    text-transform: uppercase;
 }
