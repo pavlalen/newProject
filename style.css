@@ -163,7 +163,8 @@
             }
             
             .skills,
-            .contacts {
+            .contacts,
+            .projects {
                 width: 100%;
                 text-align: center;
                 flex-flow: row wrap;
